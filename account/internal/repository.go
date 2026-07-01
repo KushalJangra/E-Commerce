@@ -5,7 +5,7 @@ import (
 	"log"
 
 	_ "github.com/lib/pq"
-	"github.com/rasadov/EcommerceAPI/account/models"
+	"github.com/kushaljangra/e-commerce/account/models"
 	"gorm.io/gorm"
 )
 

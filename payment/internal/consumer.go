@@ -6,8 +6,8 @@ import (
 	"log"
 
 	"github.com/IBM/sarama"
-	"github.com/rasadov/EcommerceAPI/payment/models"
-	"github.com/rasadov/EcommerceAPI/pkg/kafka"
+	"github.com/kushaljangra/e-commerce/payment/models"
+	"github.com/kushaljangra/e-commerce/pkg/kafka"
 )
 
 type EventConsumer struct {

@@ -7,9 +7,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/rasadov/EcommerceAPI/account/internal"
+	"github.com/kushaljangra/e-commerce/account/internal"
 
-	"github.com/rasadov/EcommerceAPI/account/models"
+	"github.com/kushaljangra/e-commerce/account/models"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	"gorm.io/driver/sqlite"

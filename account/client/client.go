@@ -4,8 +4,8 @@ import (
 	"context"
 	"log"
 
-	"github.com/rasadov/EcommerceAPI/account/models"
-	"github.com/rasadov/EcommerceAPI/account/proto/pb"
+	"github.com/kushaljangra/e-commerce/account/models"
+	"github.com/kushaljangra/e-commerce/account/proto/pb"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
 	"google.golang.org/protobuf/types/known/wrapperspb"

@@ -5,10 +5,10 @@ import (
 	"time"
 
 	"github.com/IBM/sarama"
-	"github.com/rasadov/EcommerceAPI/product/config"
+	"github.com/kushaljangra/e-commerce/product/config"
 	"github.com/tinrab/retry"
 
-	"github.com/rasadov/EcommerceAPI/product/internal"
+	"github.com/kushaljangra/e-commerce/product/internal"
 )
 
 func main() {

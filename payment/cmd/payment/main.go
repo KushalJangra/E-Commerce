@@ -5,8 +5,8 @@ import (
 	"time"
 
 	"github.com/IBM/sarama"
-	"github.com/rasadov/EcommerceAPI/payment/config"
-	"github.com/rasadov/EcommerceAPI/payment/internal"
+	"github.com/kushaljangra/e-commerce/payment/config"
+	"github.com/kushaljangra/e-commerce/payment/internal"
 	"github.com/tinrab/retry"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"

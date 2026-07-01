@@ -5,8 +5,8 @@ import (
 	"log"
 	"time"
 
-	"github.com/rasadov/EcommerceAPI/order/models"
-	"github.com/rasadov/EcommerceAPI/order/proto/pb"
+	"github.com/kushaljangra/e-commerce/order/models"
+	"github.com/kushaljangra/e-commerce/order/proto/pb"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
 	"google.golang.org/protobuf/types/known/wrapperspb"

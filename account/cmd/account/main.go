@@ -4,8 +4,8 @@ import (
 	"log"
 	"time"
 
-	"github.com/rasadov/EcommerceAPI/account/config"
-	"github.com/rasadov/EcommerceAPI/account/internal"
+	"github.com/kushaljangra/e-commerce/account/config"
+	"github.com/kushaljangra/e-commerce/account/internal"
 	"github.com/tinrab/retry"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"

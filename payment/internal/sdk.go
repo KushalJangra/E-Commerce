@@ -14,9 +14,9 @@ import (
 
 	"github.com/dodopayments/dodopayments-go"
 	"github.com/dodopayments/dodopayments-go/option"
-	"github.com/rasadov/EcommerceAPI/payment/config"
-	"github.com/rasadov/EcommerceAPI/payment/dto"
-	"github.com/rasadov/EcommerceAPI/payment/models"
+	"github.com/kushaljangra/e-commerce/payment/config"
+	"github.com/kushaljangra/e-commerce/payment/dto"
+	"github.com/kushaljangra/e-commerce/payment/models"
 )
 
 type PaymentClient interface {

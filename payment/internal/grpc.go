@@ -3,8 +3,8 @@ package internal
 import (
 	"context"
 
-	order "github.com/rasadov/EcommerceAPI/order/client"
-	"github.com/rasadov/EcommerceAPI/payment/proto/pb"
+	order "github.com/kushaljangra/e-commerce/order/client"
+	"github.com/kushaljangra/e-commerce/payment/proto/pb"
 	"google.golang.org/protobuf/types/known/wrapperspb"
 )
 

@@ -1,4 +1,4 @@
-FROM rasadov/ecommerce-base:latest AS build
+FROM ecommerce/ecommerce-base:latest AS build
 COPY account account
 COPY product product
 COPY order order

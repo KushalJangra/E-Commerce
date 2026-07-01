@@ -4,7 +4,7 @@ import (
 	"context"
 	"log"
 
-	"github.com/rasadov/EcommerceAPI/payment/models"
+	"github.com/kushaljangra/e-commerce/payment/models"
 	"gorm.io/gorm"
 )
 

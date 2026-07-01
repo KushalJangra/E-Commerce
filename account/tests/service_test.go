@@ -6,10 +6,10 @@ import (
 	"log"
 	"testing"
 
-	"github.com/rasadov/EcommerceAPI/account/internal"
-	"github.com/rasadov/EcommerceAPI/account/models"
-	"github.com/rasadov/EcommerceAPI/pkg/auth"
-	"github.com/rasadov/EcommerceAPI/pkg/crypt"
+	"github.com/kushaljangra/e-commerce/account/internal"
+	"github.com/kushaljangra/e-commerce/account/models"
+	"github.com/kushaljangra/e-commerce/pkg/auth"
+	"github.com/kushaljangra/e-commerce/pkg/crypt"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
 )

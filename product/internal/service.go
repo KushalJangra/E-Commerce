@@ -7,8 +7,8 @@ import (
 
 	"github.com/IBM/sarama"
 
-	"github.com/rasadov/EcommerceAPI/pkg/kafka"
-	"github.com/rasadov/EcommerceAPI/product/models"
+	"github.com/kushaljangra/e-commerce/pkg/kafka"
+	"github.com/kushaljangra/e-commerce/product/models"
 )
 
 type Service interface {
@@ -49,7 +49,7 @@ func (service productService) PostProduct(ctx context.Context, name, description
 	}
 
 	go func() {
-		err = kafka.SendMessageToRecommender(service, models.Event{
+		err = kafka.SendEvent(service, models.Event{
 			Type: "product_created",
 			Data: models.EventData{
 				ID:          &product.ID,
@@ -60,7 +60,7 @@ func (service productService) PostProduct(ctx context.Context, name, description
 			},
 		}, "product_events")
 		if err != nil {
-			log.Println("Failed to send event to recommendation service:", err)
+			log.Println("Failed to send product event:", err)
 		}
 	}()
 
@@ -68,25 +68,7 @@ func (service productService) PostProduct(ctx context.Context, name, description
 }
 
 func (service productService) GetProduct(ctx context.Context, id string) (*models.Product, error) {
-	product, err := service.repo.GetProductById(ctx, id)
-	if err != nil {
-		return nil, err
-	}
-
-	go func() {
-		err = kafka.SendMessageToRecommender(service, models.Event{
-			Type: "product_retrieved",
-			Data: models.EventData{
-				ID:        &product.ID,
-				AccountID: &product.AccountID,
-			},
-		}, "interaction_events")
-		if err != nil {
-			log.Println("Failed to send event to recommendation service:", err)
-		}
-	}()
-
-	return product, nil
+	return service.repo.GetProductById(ctx, id)
 }
 
 func (service productService) GetProducts(ctx context.Context, skip, take uint64) ([]*models.Product, error) {
@@ -123,7 +105,7 @@ func (service productService) UpdateProduct(ctx context.Context, id, name, descr
 	}
 
 	go func() {
-		err = kafka.SendMessageToRecommender(service, models.Event{
+		err = kafka.SendEvent(service, models.Event{
 			Type: "product_updated",
 			Data: models.EventData{
 				ID:          &updatedProduct.ID,
@@ -134,7 +116,7 @@ func (service productService) UpdateProduct(ctx context.Context, id, name, descr
 			},
 		}, "product_events")
 		if err != nil {
-			log.Println("Failed to send event to recommendation service:", err)
+			log.Println("Failed to send product event:", err)
 		}
 	}()
 
@@ -150,14 +132,14 @@ func (service productService) DeleteProduct(ctx context.Context, productId strin
 	}
 
 	go func() {
-		err = kafka.SendMessageToRecommender(service, models.Event{
+		err = kafka.SendEvent(service, models.Event{
 			Type: "product_deleted",
 			Data: models.EventData{
 				ID: &product.ID,
 			},
 		}, "product_events")
 		if err != nil {
-			log.Println("Failed to send event to recommendation service:", err)
+			log.Println("Failed to send product event:", err)
 		}
 	}()
 

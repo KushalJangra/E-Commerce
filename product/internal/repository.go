@@ -8,7 +8,7 @@ import (
 
 	"gopkg.in/olivere/elastic.v5"
 
-	"github.com/rasadov/EcommerceAPI/product/models"
+	"github.com/kushaljangra/e-commerce/product/models"
 )
 
 var (

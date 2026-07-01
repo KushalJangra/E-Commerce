@@ -4,7 +4,7 @@ import (
 	"context"
 	"log"
 
-	"github.com/rasadov/EcommerceAPI/payment/proto/pb"
+	"github.com/kushaljangra/e-commerce/payment/proto/pb"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
 )

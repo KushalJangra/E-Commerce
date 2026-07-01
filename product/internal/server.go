@@ -11,8 +11,8 @@ import (
 	"google.golang.org/protobuf/types/known/emptypb"
 	"google.golang.org/protobuf/types/known/wrapperspb"
 
-	"github.com/rasadov/EcommerceAPI/product/models"
-	"github.com/rasadov/EcommerceAPI/product/proto/pb"
+	"github.com/kushaljangra/e-commerce/product/models"
+	"github.com/kushaljangra/e-commerce/product/proto/pb"
 )
 
 type grpcServer struct {

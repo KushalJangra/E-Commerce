@@ -4,9 +4,9 @@ import (
 	"context"
 	"errors"
 
-	"github.com/rasadov/EcommerceAPI/account/models"
-	"github.com/rasadov/EcommerceAPI/pkg/auth"
-	"github.com/rasadov/EcommerceAPI/pkg/crypt"
+	"github.com/kushaljangra/e-commerce/account/models"
+	"github.com/kushaljangra/e-commerce/pkg/auth"
+	"github.com/kushaljangra/e-commerce/pkg/crypt"
 )
 
 type Service interface {

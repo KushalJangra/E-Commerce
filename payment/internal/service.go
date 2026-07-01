@@ -6,8 +6,8 @@ import (
 	"net/http"
 
 	"github.com/dodopayments/dodopayments-go"
-	"github.com/rasadov/EcommerceAPI/payment/models"
-	"github.com/rasadov/EcommerceAPI/payment/proto/pb"
+	"github.com/kushaljangra/e-commerce/payment/models"
+	"github.com/kushaljangra/e-commerce/payment/proto/pb"
 	"gorm.io/gorm"
 )
 

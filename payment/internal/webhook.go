@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"time"
 
-	order "github.com/rasadov/EcommerceAPI/order/client"
+	order "github.com/kushaljangra/e-commerce/order/client"
 )
 
 type WebhookServer struct {

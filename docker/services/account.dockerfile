@@ -1,4 +1,4 @@
-FROM rasadov/ecommerce-base:latest AS build
+FROM ecommerce/ecommerce-base:latest AS build
 COPY account account
 COPY pkg pkg
 RUN GO111MODULE=on go build -mod mod -o /go/bin/app ./account/cmd/account

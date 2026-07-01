@@ -9,8 +9,8 @@ import (
 	"sync"
 
 	"github.com/IBM/sarama"
-	order "github.com/rasadov/EcommerceAPI/order/client"
-	"github.com/rasadov/EcommerceAPI/payment/proto/pb"
+	order "github.com/kushaljangra/e-commerce/order/client"
+	"github.com/kushaljangra/e-commerce/payment/proto/pb"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/reflection"
 )
